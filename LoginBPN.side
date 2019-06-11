@@ -1,0 +1,91 @@
+{
+  "id": "3177c301-d52b-4a72-9086-62dbee195a75",
+  "version": "2.0",
+  "name": "LoginBPN",
+  "url": "http://200.77.226.6",
+  "tests": [{
+    "id": "ea1d0b12-1b4c-42e7-9f9f-a0bfbb1cd56c",
+    "name": "AccesoBPN",
+    "commands": [{
+      "id": "233aad17-5330-44b3-8b6d-27bb8577b46f",
+      "comment": "",
+      "command": "open",
+      "target": "/Dashboard/DashBoard.UI/LogIn.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39720563-887e-4a4a-ba3b-9f4b04ad5ddb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "851a25ea-cc0f-4c5c-9dd6-2811680d5fd1",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtUsuario",
+      "targets": [
+        ["id=txtUsuario", "id"],
+        ["name=txtUsuario", "name"],
+        ["css=#txtUsuario", "css:finder"],
+        ["xpath=//input[@id='txtUsuario']", "xpath:attributes"],
+        ["xpath=//form[@id='Form1']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "WEBTEST"
+    }, {
+      "id": "331c9d9f-4c39-43df-a21c-cc16100ad0f7",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPass",
+      "targets": [
+        ["id=txtPass", "id"],
+        ["name=txtPass", "name"],
+        ["css=#txtPass", "css:finder"],
+        ["xpath=//input[@id='txtPass']", "xpath:attributes"],
+        ["xpath=//form[@id='Form1']/div[3]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06c15e25-8058-45f8-8eb9-866795ea52f0",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPass",
+      "targets": [
+        ["id=txtPass", "id"],
+        ["name=txtPass", "name"],
+        ["css=#txtPass", "css:finder"],
+        ["xpath=//input[@id='txtPass']", "xpath:attributes"],
+        ["xpath=//form[@id='Form1']/div[3]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Ab12345678"
+    }, {
+      "id": "ae380667-b432-47df-a51b-433fb7d20e2f",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnAceptar",
+      "targets": [
+        ["id=btnAceptar", "id"],
+        ["name=btnAceptar", "name"],
+        ["css=#btnAceptar", "css:finder"],
+        ["xpath=//input[@id='btnAceptar']", "xpath:attributes"],
+        ["xpath=//form[@id='Form1']/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "51ba2a9a-e4ca-4275-b32d-e8d3c152eae2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ea1d0b12-1b4c-42e7-9f9f-a0bfbb1cd56c"]
+  }],
+  "urls": ["http://200.77.226.6/"],
+  "plugins": []
+}

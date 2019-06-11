@@ -1,0 +1,178 @@
+{
+  "id": "66bd5d41-f5c4-4687-9500-143815898cfa",
+  "version": "2.0",
+  "name": "TEST",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "ae6f62c6-4eee-43dd-bd9f-4b3b8ea815ce",
+    "name": "Buscar peli informaticos",
+    "commands": [{
+      "id": "e444e21f-49ab-45b5-b7a0-15044c551966",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c4e06f8-aca3-4991-acee-55d83786a661",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7aa41dd-eb91-4f5d-9a82-fda4dc763a3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64f4fd1d-2023-479d-83f7-e67cede0fdb2",
+      "comment": "",
+      "command": "type",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "ITS"
+    }, {
+      "id": "ecd090dd-11a2-479e-9950-3666ce125c66",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "df81173a-4920-450c-a84e-306f96495849",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Los informáticos",
+      "targets": [
+        ["linkText=Los informáticos", "linkText"],
+        ["css=.findSection:nth-child(3) .odd > .result_text > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Los informáticos')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/div[2]/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/title/tt0487831/?ref_=fn_al_tt_1')])[2]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Los informáticos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d81fc20e-cf1b-46b9-95d8-9a967d640168",
+    "name": "proximamente",
+    "commands": [{
+      "id": "8cedf126-70f2-4f43-a8b0-3d9d0cffb3c6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "892eec3e-4c0a-446d-b626-df68b39e666f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e58f2ccc-59a7-426d-a8b8-d618cf8cd0a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#navTitleMenu > .downArrow",
+      "targets": [
+        ["css=#navTitleMenu > .downArrow", "css:finder"],
+        ["xpath=//li[@id='navTitleMenu']/span", "xpath:idRelative"],
+        ["xpath=//li[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95dcbdc4-bfe0-4c46-aebb-9f3e57930bdc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Coming Soon",
+      "targets": [
+        ["linkText=Coming Soon", "linkText"],
+        ["css=#navMenu1 > .subNavListContainer:nth-child(2) li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Coming Soon')]", "xpath:link"],
+        ["xpath=//div[@id='navMenu1']/div[2]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/movies-coming-soon/?ref_=nv_mv_cs')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Coming Soon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e2e9780-22c1-49a7-8f90-fed4e3ffcb0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list_item:nth-child(2) .poster",
+      "targets": [
+        ["css=.list_item:nth-child(2) .poster", "css:finder"],
+        ["xpath=//img[@alt='Men in Black: International (2019) Poster']", "xpath:img"],
+        ["xpath=//td[@id='img_primary']/div/a/div/img", "xpath:idRelative"],
+        ["xpath=//td/div/a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "225360ba-726b-40f1-b059-c7c281ebbb34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slate_button",
+      "targets": [
+        ["css=.slate_button", "css:finder"],
+        ["xpath=//div[@id='title-overview-widget']/div/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/video/imdb/vi1150073881?playlistId=tt2283336&ref_=tt_ov_vi')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7530dd4-89fc-4063-8107-c8dacbdba2af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-video",
+      "targets": [
+        ["css=.jw-video", "css:finder"],
+        ["xpath=//div[@id='imdb-jw-video-1']/div[2]/video", "xpath:idRelative"],
+        ["xpath=//video", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8af6c732-7b48-4b2d-8363-d4d945ff517a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ae6f62c6-4eee-43dd-bd9f-4b3b8ea815ce"]
+  }, {
+    "id": "172f6574-fa80-48fb-8971-2bf7d38298dc",
+    "name": "proximamente",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}
